@@ -58,7 +58,7 @@ With the advent of operating systems, relocating loaders separate from linkers a
 
 Before operating systems, each program had the machine’s entire memory at its disposal(<font color='cornflowerblue'>bare mechine</font>), so the program could be assembled and linked for fixed memory addresses(<font color='cornflowerblue'>because everything the program can do</font>), knowing that all addresses in the computer would be available.
 
-But with operating systems, the program had to share the computer’s memory with the operating system and perhaps even with other programs(<font color='cornflowerblue'>meanwhile the program can also denote process or thread or task</font>), <font color='red'>This means that the actual addresses at which the program would be running weren’t known until the operating system loaded the program into memory<font color='orange'>   pay aattention to that now the executable file(not the executable  module) is stored on the secondary memory that also can described the disk or flash or type </font></font>
+But with operating systems, the program had to share the computer’s memory with the operating system and perhaps even with other programs(<font color='cornflowerblue'>meanwhile the program can also denote process or thread or task</font>), <font color='red'>This means that the actual addresses at which the program would be running weren’t known until the operating system loaded the program into memory<font color='orange'>   pay attention to that now the executable file(not the executable  module) is stored on the secondary memory that also can described the disk or flash or type </font></font>
 
 <font color='red'>**Deferring final address binding past link time to load time.** </font>
 
@@ -171,3 +171,5 @@ Shared libraries complicate this task a little by moving some of the work from l
 > Because when in the linking time linker just notes the position of the reference 
 
 <font color='red'>The linker identifies the shared libraries that resolve the undefined names in a linker run, but rather than linking anything into the program, the linker notes in the output file the names of the libraries in which the symbols were found, so that the shared library can be bound in when the program is loaded. </font>
+
+## 6.Relocation and code modification
