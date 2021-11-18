@@ -9,3 +9,5 @@ When designing an embedded system, the idea of hierarchical design should be fol
 ![](picture/layer.png)
 
 ![](picture/quote.png)
+
+# 3.The linker is older than the compiler
